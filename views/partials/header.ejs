@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
+    <title>Vocal For Local</title>
+    
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+     <link rel="stylesheet" type="text/css" href="/css/profile.css">
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/page1.css">
+<link rel="stylesheet" href="/css/page2.css">
+<link rel="stylesheet" href="/css/page3.css">
+
+</head>
+
+<body>
+    <!-- block for logo -->
+    <div class="left">
+        <img src="../img/logo.png"  alt="sneakers" height="50px" width="120px">
+    </div>
+    <!-- block for navbar  -->
+    <div class="right">
+        <nav class="navbar sticky-top">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Business Guide</a></li>
+                <li><a href="/marketing">Marketing</a></li>
+                <li><a href="/#pr">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <% if (locals.user) { %>
+                    <%- include("loggedin.ejs"); %>
+                <% } %>
+            </ul>
+        </nav>
+    </div>

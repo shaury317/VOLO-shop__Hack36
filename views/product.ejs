@@ -1,0 +1,44 @@
+
+<%- include("./partials/header") %>
+
+<style>
+    body{
+       background-image: url('../img/pro-01.png');
+       
+       
+    }
+    .ptype{
+        left:100000;
+    }
+    </style>
+    <!-- product image  -->
+    <div class="pimage">
+        <img src="../img/ps.jpg" id="sneakimg" alt="sneakers" height="400px" width="300px">
+    </div>
+
+
+    <!-- product description  -->
+    <div class="desc">
+        
+            <span class="brand"><%=p.ShopOwner%></span>
+            <span class="ptype"><%=p.Pname%></span>
+            <span class="price">&#8377;<%=p.price%></span>
+            
+            <div class="para">
+                <p><%=p.dis%>
+                </p>
+            </div>
+   </div>
+   
+
+   <!-- block for address -->
+    <div class="address">
+        <img src="../img/locator.png" alt="" class="addresslogo">
+        <i class="fa-duotone fa-location-dot"></i>
+        <label for="addrs">Availability Location</label><br>
+        <input type="text" id="addrs" placeholder="Write address here">
+    </div>
+
+
+    <%- include("./partials/footer") %>
+  
